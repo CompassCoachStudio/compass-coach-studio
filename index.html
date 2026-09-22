@@ -8,6 +8,38 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="思舵工作室提供人生方向諮詢、情緒陪伴服務與一針問卦，陪你在迷惘時找到方向。預約諮詢，開始你的探索旅程。">
+  <link rel="canonical" href="https://compasscoachstudio.github.io/compass-coach-studio/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="思舵工作室 | 找到屬於你的人生方向">
+  <meta property="og:description" content="思舵工作室提供人生方向諮詢、情緒陪伴服務與一針問卦，陪你在迷惘時找到方向。">
+  <meta property="og:url" content="https://compasscoachstudio.github.io/compass-coach-studio/">
+  <meta property="og:image" content="https://compasscoachstudio.github.io/compass-coach-studio/LOGO/LOGO2_nobg.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="思舵工作室 | 找到屬於你的人生方向">
+  <meta name="twitter:description" content="思舵工作室提供人生方向諮詢、情緒陪伴服務與一針問卦，陪你在迷惘時找到方向。">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "思舵工作室",
+    "alternateName": "Compass Studio",
+    "description": "提供人生方向諮詢、情緒陪伴服務與一針問卦，陪你在迷惘時找到屬於你的方向。",
+    "url": "https://compasscoachstudio.github.io/compass-coach-studio/",
+    "logo": "https://compasscoachstudio.github.io/compass-coach-studio/LOGO/LOGO2_nobg.png",
+    "knowsLanguage": "zh-TW",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "諮詢服務",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "人生方向諮詢" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "情緒陪伴服務" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "一針問卦" } }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -29,6 +61,9 @@
         <li><a href="#contact">聯絡我們</a></li>
       </ul>
       <a href="#booking" class="btn btn-nav">預約諮詢</a>
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
@@ -127,7 +162,7 @@
           <div class="service-info">
             <h3>人生方向諮詢</h3>
             <p>透過深度對話，協助你釐清目前困境，找到前進的方向。適合正在十字路口，或感到迷惘的你。</p>
-            <a href="#" class="link-more">了解更多 →</a>
+            <a href="#booking" class="link-more">預約諮詢 →</a>
           </div>
         </article>
         <article class="service-card">
@@ -137,7 +172,7 @@
           <div class="service-info">
             <h3>情緒陪伴服務</h3>
             <p>在你低落、迷失時，以低評判的方式陪你走過每一段情緒起伏。你不需要撐著，有人陪你。</p>
-            <a href="#" class="link-more">了解更多 →</a>
+            <a href="#booking" class="link-more">預約諮詢 →</a>
           </div>
         </article>
       </div>
@@ -197,6 +232,34 @@
     </div>
   </section>
 
+  <!-- Booking -->
+  <section class="booking-section" id="booking">
+    <div class="container">
+      <h2 class="section-title">預約諮詢</h2>
+      <p class="section-sub">每一段旅程，都從第一步開始</p>
+      <div class="booking-steps">
+        <div class="booking-step">
+          <div class="step-num">01</div>
+          <h3>說明你的狀況</h3>
+          <p>簡單說明目前的困境與期待，讓我在諮詢前先了解你的需求。</p>
+        </div>
+        <div class="booking-step">
+          <div class="step-num">02</div>
+          <h3>確認諮詢時間</h3>
+          <p>收到申請後 24 小時內回覆，與你確認最適合的時段與方式。</p>
+        </div>
+        <div class="booking-step">
+          <div class="step-num">03</div>
+          <h3>開始你的旅程</h3>
+          <p>透過深度對話，一起找到屬於你前進的方向與生命力。</p>
+        </div>
+      </div>
+      <div class="booking-cta">
+        <a href="https://line.me/ti/p/YOURLINEID" class="btn btn-primary booking-btn" target="_blank" rel="noopener">加 LINE 預約諮詢</a><!-- TODO: 將 YOURLINEID 替換為你的 LINE ID -->
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="footer" id="contact">
     <div class="container footer-top">
@@ -230,7 +293,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2024 思舵工作室 Compass Studio. All Rights Reserved.</p>
+      <p>© 2026 思舵工作室 Compass Studio. All Rights Reserved.</p>
     </div>
   </footer>
 
@@ -239,6 +302,22 @@
       btn.addEventListener('click', () => {
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
+      });
+    });
+
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      navMenu.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
       });
     });
   </script>
