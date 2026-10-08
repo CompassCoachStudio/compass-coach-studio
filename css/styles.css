@@ -595,6 +595,18 @@ img { display: block; max-width: 100%; }
     linear-gradient(135deg, #AABCB8 0%, #88A098 40%, #668478 70%, #486860 100%);
 }
 
+.p4 {
+  background:
+    radial-gradient(ellipse 55% 50% at 25% 30%, rgba(180, 200, 160, 0.85) 0%, transparent 55%),
+    linear-gradient(135deg, #B8CCA0 0%, #96AD7A 40%, #749055 70%, #547040 100%);
+}
+
+.p5 {
+  background:
+    radial-gradient(ellipse 55% 50% at 25% 30%, rgba(210, 195, 175, 0.85) 0%, transparent 55%),
+    linear-gradient(135deg, #CEBEA8 0%, #B0A080 40%, #907860 70%, #6E5840 100%);
+}
+
 .post-info { padding: 20px 22px 24px; }
 
 .post-date {
